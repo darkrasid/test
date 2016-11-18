@@ -1,0 +1,69 @@
+```java
+public class Ababab {
+    private static InputReader in;
+	static String testCase = null;
+
+	public static void main(String[] args) {
+		
+		in = new InputReader(System.in);
+		
+		testCase = in.next() + in.next();
+		
+		
+		char[] testChar = testCase.toCharArray();
+		
+		int size = testChar.length;
+		for(int i =0; i < size -1 ; ++ i ) {
+			
+			String comparePrefix = "";
+			String compareSuffix = "";
+			
+			
+			for( int j = 0; j < i; ++ j) {
+				comparePrefix += testChar[j];
+				compareSuffix = testChar[size - j - 1 ] + compareSuffix;
+			}
+			
+			
+			if(comparePrefix.equals(compareSuffix)) {
+				System.out.print(comparePrefix.length() + " ");
+			}
+			else {
+				comparePrefix = "";
+				compareSuffix = "";
+			}
+			
+		}
+		
+		System.out.print(testCase.length());
+		
+
+	}
+
+	static class InputReader {
+		public BufferedReader reader;
+		public StringTokenizer tokenizer;
+
+		public InputReader(InputStream stream) {
+			reader = new BufferedReader(new InputStreamReader(stream), 32768);
+			tokenizer = null;
+		}
+
+		public String next() {
+			while (tokenizer == null || !tokenizer.hasMoreTokens()) {
+				try {
+					tokenizer = new StringTokenizer(reader.readLine());
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+				}
+			}
+			return tokenizer.nextToken();
+		}
+
+		public int nextInt() {
+			return Integer.parseInt(next());
+		}
+	}
+
+}
+```

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DOCKER란?
 개인적으로 docker의 정의를 딱 한줄로 요약하기는 어려운 일 같습니다. 그래서 [docker docs홈페이지](https://docs.docker.com/)의 정의를 빌려오자면..
 *
@@ -103,5 +104,12 @@ docker run -it ubuntu /bin/bash
 때문에 협업을 위해서 docker image를 만들 때는 꼭 Dockerfile을 생성해 놓길 추천드립니다. container로 띄울 때 에러가 나면 image에 정확히 어떤 내용이 있었는지를 모른채 디버깅하는 것이 매우 어렵습니다. 그 이미지를 내가 만들었다면
 대충 내용을 알테니 어느정도 괜찮지만 그 이미지가 내가 만든것이 아닐 때는 Dockerfile이 없을 경우 매우 난감하죠.. 때문에 저는 개인적으로 commit으로 이미지를 만드는 것보다 /bin/bash에서 작업하는 내용을 잘 기록해뒀다가
 Dockerfile로 image를 만드는 것을 추천하고 싶습니다. 
+=======
+aaaa
+![imglink](https://raw.githubusercontent.com/darkrasid/test/master/IEerrorsmall.jpg)
+![imglink](https://gitlab.com/darkrasid/testtest/raw/master/testing_image.jpg)
+![](https://raw.githubusercontent.com/darkrasid/test/master/test.GIF)
+
+>>>>>>> 260a467137678bd3b8117025f0482d5f628fa984
 
 
